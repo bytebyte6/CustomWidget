@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        tools:context=".MainActivity" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:id="@+id/root"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <include layout="@layout/sleep_view"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.example.widget.ColorImageView
+                    android:id="@+id/one"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_single_bed"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+
+            <com.example.widget.ColorImageView
+                    android:id="@+id/two"
+                    android:padding="16dp"
+                    app:startColor="@color/colorPrimary"
+                    android:src="@drawable/ic_two_wheeler"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+
+            <com.example.widget.ColorImageView
+                    android:id="@+id/three"
+                    android:padding="16dp"
+                    app:startColor="@color/colorAccent"
+                    android:src="@drawable/ic_bubble_chart"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+
+            <com.example.widget.BatteryView
+                    app:headCorner="1dp"
+                    app:battery_high_color="@android:color/holo_green_light"
+                    app:battery_middle_color="@android:color/holo_green_dark"
+                    app:battery_low_color="@android:color/holo_red_light"
+                    app:outSide_color="@android:color/holo_green_light"
+                    app:power="0.19"
+                    app:borderWidth="2dp"
+                    app:corner="2dp"
+                    app:headHeight="5dp"
+                    app:headWidth="3dp"
+                    app:width="30dp"
+                    app:height="15dp"
+                    app:margin="2dp"
+                    android:id="@+id/batteryView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+        <com.example.widget.ColorfulProcessBar
+                app:max="100.0"
+                app:corner="8dp"
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        <Button
+                android:text="Change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"/>
+        <Button
+                android:text="Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add"/>
+        <Button
+                android:text="Del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/del"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="corner" format="dimension"/>
+    <attr name="bgColor" format="color" />
+    <attr name="fgColor" format="color" />
+    <attr name="percent" format="float" />
+    <attr name="startAngle" format="float" />
+    <attr name="width" format="dimension" />
+    <attr name="startColor" format="reference|color"/>
+    <attr name="endColor" format="reference|color"/>
+
+    <declare-styleable name="SleepView">
+        <attr name="wake_color" format="color"/>
+        <attr name="deep_color" format="color"/>
+        <attr name="weak_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorImageView">
+        <attr name="startColor" />
+        <attr name="endColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorfulProcessBar">
+        <attr name="corner"/>
+        <attr name="max" format="float"/>
+        <attr name="barHeight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SportButton">
+        <attr name="width" />
+        <attr name="startColor" />
+        <attr name="endColor"/>
+        <attr name="bgColor"/>
+        <attr name="startText" format="string"/>
+        <attr name="endText" format="string"/>
+        <attr name="android:textSize" />
+    </declare-styleable>
+
+    <declare-styleable name="BatteryView">
+        <attr name="corner" />
+        <attr name="width"  />
+        <attr name="headCorner" format="dimension" />
+        <attr name="margin" format="dimension" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="headWidth" format="dimension" />
+        <attr name="height" format="dimension" />
+        <attr name="headHeight" format="dimension" />
+        <attr name="outSide_color" format="color"/>
+        <attr name="battery_low_color" format="color"/>
+        <attr name="battery_middle_color" format="color"/>
+        <attr name="battery_high_color" format="color"/>
+        <attr name="power" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorfulRingProgressView">
+        <attr name="bgColor" />
+        <attr name="fgColorStart" format="color" />
+        <attr name="fgColorEnd" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="percent" />
+        <attr name="startAngle" />
+    </declare-styleable>
+
+</resources>

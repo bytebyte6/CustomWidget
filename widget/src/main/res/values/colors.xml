@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deep_color">#778CFF</color>
+    <color name="weak_color">#ACB9FF</color>
+    <color name="wake_color">#D8DEFF</color>
+</resources>

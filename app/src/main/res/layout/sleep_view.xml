@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <com.example.widget.ColorImageView
+                app:endColor="@color/deep_color"
+                app:startColor="@color/deep_color"
+                android:layout_gravity="center"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+
+        <TextView
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深睡"/>
+
+        <com.example.widget.ColorImageView
+                app:endColor="@color/weak_color"
+                android:layout_marginStart="8dp"
+                app:startColor="@color/weak_color"
+                android:layout_gravity="center"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+
+        <TextView
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浅睡"/>
+
+        <com.example.widget.ColorImageView
+                app:endColor="@color/wake_color"
+                android:layout_marginStart="8dp"
+                app:startColor="@color/wake_color"
+                android:layout_gravity="center"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+
+        <TextView
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清醒"/>
+
+    </LinearLayout>
+
+    <com.example.widget.SleepView
+            android:id="@+id/sleepView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+    />
+
+    <TextView
+            android:layout_gravity="bottom"
+            android:layout_marginStart="8dp"
+            android:text="21:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="end|bottom"
+            android:text="9:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</FrameLayout>
